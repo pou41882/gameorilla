@@ -30,7 +30,7 @@ test("server-renders the branded Gameorilla homepage", async () => {
   const html = await response.text();
   assert.match(html, /<title>Gameorilla \| Ape Vice Arcade<\/title>/i);
   assert.match(html, /Ape vice arcade\. Bananas on the line\./i);
-  assert.match(html, /Blankety Blank/i);
+  assert.match(html, /Fill in the Blank/i);
   assert.match(html, /Play for bananas\. Stay for the vice\./i);
   assert.match(html, /Night Shift Trivia/i);
   assert.match(html, /Neon Whodunit/i);
