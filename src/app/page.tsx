@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GameorillaLogo, GameorillaMark } from "@/components/gameorilla-brand";
+import { GameorillaLogo } from "@/components/gameorilla-brand";
 
 const steps = [
   ["01", "Pull up", "Create a private room and get a two-word room code."],
@@ -44,7 +44,7 @@ export default function HomePage() {
 
           <aside className="relative overflow-hidden border-2 border-[#FF3EA8] bg-[#04050A] p-7 shadow-[10px_10px_0_#5130C9]">
             <div className="absolute inset-x-0 top-0 h-2 bg-[#FF3EA8]" />
-            <GameorillaMark className="h-32 w-32 sm:h-40 sm:w-40" />
+            <GameorillaLogo className="h-auto w-full max-w-none" />
             <p className="mt-9 text-xs font-black uppercase tracking-[.16em] text-[#27E7E2]">Tonight&apos;s cabinet</p>
             <h2 className="mt-3 text-3xl font-black tracking-[-.07em] text-[#F3F6FF]">Fill in the Blank</h2>
             <p className="mt-4 leading-relaxed text-[#F3F6FF]/75">Finish the prompt. Vote for the line that hits hardest. No cash on the table—just bragging rights and banana energy.</p>
