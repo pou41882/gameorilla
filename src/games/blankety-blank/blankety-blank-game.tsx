@@ -52,7 +52,7 @@ type RoomState = {
   room_id: string;
   room_code: string;
   room_status: string;
-  rounds_to_play?: number | null;
+  target_points?: number | null;
   current_round_number?: number | null;
   round_id?: string | null;
   prompt_text?: string | null;
@@ -196,7 +196,7 @@ function formatCountdown(seconds: number | null) {
 export default function BlanketyBlankGame() {
   const [view, setView] = useState<View>("home");
   const [name, setName] = useState("");
-  const [roundsToPlay, setRoundsToPlay] = useState<3 | 7 | 13>(7);
+  const [targetPoints, setTargetPoints] = useState<5 | 10 | 15>(10);
   const [roomCode, setRoomCode] = useState("");
   const [joinCode, setJoinCode] = useState("");
   const [message, setMessage] = useState("");
@@ -307,11 +307,11 @@ useEffect(() => {
       setView("lobby");
 
       if (
-        roomState.rounds_to_play === 3 ||
-        roomState.rounds_to_play === 7 ||
-        roomState.rounds_to_play === 13
+        roomState.target_points === 5 ||
+        roomState.target_points === 10 ||
+        roomState.target_points === 15
       ) {
-        setRoundsToPlay(roomState.rounds_to_play);
+        setTargetPoints(roomState.target_points);
       }
 
       if (
@@ -686,11 +686,11 @@ if (!writingEndsAt) {
           p_code: candidateCode,
           p_display_name: playerName,
           p_session_id: browserSessionId,
-          p_victory_mode: "rounds",
-          p_rounds_to_play: roundsToPlay,
+          p_victory_mode: "first_to",
+          p_rounds_to_play: null,
           p_answer_end_mode: "timer",
-          p_target_points: null,
-          p_win_by: 3,
+          p_target_points: targetPoints,
+          p_win_by: 1,
           p_answer_timer_seconds: ANSWER_TIMER_SECONDS,
           p_is_player: createAsPlayer,
         });
@@ -786,16 +786,16 @@ if (settingsError) {
 
 const roomSettings = (
   settingsData as {
-  rounds_to_play?: number;
+  target_points?: number;
 }[] | null
 )?.[0];
 
 if (
-  roomSettings?.rounds_to_play === 3 ||
-  roomSettings?.rounds_to_play === 7 ||
-  roomSettings?.rounds_to_play === 13
+  roomSettings?.target_points === 5 ||
+  roomSettings?.target_points === 10 ||
+  roomSettings?.target_points === 15
 ) {
-  setRoundsToPlay(roomSettings.rounds_to_play);
+  setTargetPoints(roomSettings.target_points);
 }
       setPlayerSessionId(browserSessionId);
 setName(playerName);
@@ -1076,30 +1076,30 @@ setView("lobby");
 
 <div className="mt-7">
   <p className="text-sm font-black uppercase tracking-[0.14em]">
-    How many rounds?
+    Pick the banana stack
   </p>
 
   <div className="mt-3 grid grid-cols-3 gap-3">
-    {([3, 7, 13] as const).map((roundOption) => (
+    {([5, 10, 15] as const).map((pointOption) => (
       <button
-        key={roundOption}
+        key={pointOption}
         type="button"
-        onClick={() => setRoundsToPlay(roundOption)}
+        onClick={() => setTargetPoints(pointOption)}
         className={`rounded-xl border-2 border-[#04050A] px-4 py-3 font-black transition ${
-          roundsToPlay === roundOption
+          targetPoints === pointOption
             ? "bg-[#FF3EA8] shadow-[4px_4px_0_#04050A]"
             : "bg-[#F3F6FF] hover:bg-[#FF3EA8]/35"
         }`}
       >
-        {roundOption}
+        {pointOption}
         <span className="block text-xs uppercase tracking-[0.12em]">
-          rounds
+          bananas
         </span>
       </button>
     ))}
   </div>
   <p className="mt-3 text-sm font-bold text-[#04050A]/70">
-    Seven rounds is the classic Gameorilla game.
+    First solo player to the stack wins. Ten bananas is the house game.
   </p>
 </div>
 
@@ -1282,7 +1282,7 @@ setView("lobby");
                     Game setup
                   </p>
                   <p className="mt-3 text-2xl font-black">
-  {roundsToPlay} rounds
+  First to {targetPoints} bananas
 </p>
                   <p className="mt-1 font-semibold text-[#04050A]">
   60 seconds to answer each prompt.
@@ -1359,7 +1359,7 @@ setView("lobby");
               <div className={`flex shrink-0 flex-col border-b-2 border-[#04050A] sm:flex-row sm:items-start sm:justify-between ${isGameboardView ? "gap-3 pb-3" : "gap-5 pb-5"}`}>
                 <div>
                   <p className="text-sm font-black uppercase tracking-[0.14em] text-[#FF5E78]">
-                    Round {currentRound.round_number} of {roundsToPlay}
+                    Round {currentRound.round_number} · first to {targetPoints} bananas
                   </p>
                   <p className="mt-2 text-sm font-bold text-[#04050A]">
                     Fill in the blank before time runs out.
