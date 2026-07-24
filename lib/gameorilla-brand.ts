@@ -13,7 +13,7 @@ export const brandPalette = [
 export const games = [
   {
     slug: "fill-in-the-blank",
-    title: "Blankety Blank",
+    title: "Fill in the Blank",
     type: "Party word game",
     description:
       "Complete the prompt, read the room, win the vote, and stack bananas. The first Gamearang game to enter Ape Vice Arcade.",
