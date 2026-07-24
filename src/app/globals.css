@@ -37,7 +37,8 @@ h1, h2, h3, h4, h5, h6, button, a {
 }
 
 /* The shared room engine uses Gamearang utility colors. Keep its behavior while
-   rendering every play surface in the Gameorilla midnight-neon system. */
+   rendering every play surface in the Gameorilla midnight-neon system.
+   This compatibility layer can be retired once the shared component library lands. */
 .bg-\[\#F3F6FF\] { background-color: var(--gorilla-black) !important; }
 .text-\[\#04050A\] { color: var(--gorilla-white) !important; }
 .border-\[\#04050A\] { border-color: var(--gorilla-cyan) !important; }
