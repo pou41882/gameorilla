@@ -14,7 +14,7 @@ export default function HowToPlayPage() {
       intro="One person opens a room, everyone joins by QR or room name, and the game keeps the party moving. No download or permanent account is required."
     >
       <InfoCard title="1. Open a room">
-        <p>The captain chooses a 3-, 7-, or 13-round game and receives a funny two-word room name. Seven rounds is the default.</p>
+        <p>The captain picks a five-, ten-, or fifteen-banana point target and receives a funny two-word room name. Ten bananas is the house game.</p>
         <p>For an in-person party, open a second device as the shared gameboard and place it where everyone can see it.</p>
       </InfoCard>
       <InfoCard title="2. Invite the players">
@@ -26,7 +26,7 @@ export default function HowToPlayPage() {
         <p>You cannot vote for your own answer. Each vote earns one point, and a clean sweep earns a 3× bonus.</p>
       </InfoCard>
       <InfoCard title="4. Win the game">
-        <p>The game ends after 3, 7, or 13 rounds. The player with the highest score wins, and tied leaders share the win.</p>
+        <p>The first player to the chosen banana stack wins. If the leaders are tied at the target, the next round breaks the tie.</p>
         <p>After the final scores, the captain can start a rematch with the same group and room name.</p>
       </InfoCard>
       <InfoCard title="Keep it fun">
@@ -36,4 +36,3 @@ export default function HowToPlayPage() {
     </SiteShell>
   );
 }
-
