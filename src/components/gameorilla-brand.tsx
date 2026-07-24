@@ -1,6 +1,9 @@
 import type { SVGProps } from "react";
 
 type MarkProps = SVGProps<SVGSVGElement>;
+type LogoProps = {
+  className?: string;
+};
 
 export function GameorillaMark({ className, ...props }: MarkProps) {
   return (
@@ -26,18 +29,12 @@ export function GameorillaMark({ className, ...props }: MarkProps) {
   );
 }
 
-export function GameorillaLogo({ className = "", ...props }: MarkProps) {
+export function GameorillaLogo({ className = "" }: LogoProps) {
   return (
-    <span className={`inline-flex items-center gap-3 ${className}`}>
-      <GameorillaMark className="h-11 w-11 shrink-0" {...props} />
-      <span className="leading-none">
-        <span className="block text-xl font-black uppercase tracking-[-0.08em] text-[#27E7E2] sm:text-2xl">
-          Game<span className="text-[#FF3EA8]">orilla</span>
-        </span>
-        <span className="mt-1 block font-mono text-[0.6rem] font-bold uppercase tracking-[0.18em] text-[#8D46FF]">
-          Ape Vice Arcade
-        </span>
-      </span>
-    </span>
+    <img
+      src="/og-gameorilla.png"
+      alt="Gameorilla: Vice Arcade"
+      className={`h-16 w-auto max-w-44 object-contain sm:h-20 sm:max-w-56 ${className}`}
+    />
   );
 }
