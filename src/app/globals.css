@@ -36,6 +36,14 @@ h1, h2, h3, h4, h5, h6, button, a {
   font-family: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
 }
 
+/* The shared room engine uses Gamearang utility colors. Keep its behavior while
+   rendering every play surface in the Gameorilla midnight-neon system. */
+.bg-\[\#F3F6FF\] { background-color: var(--gorilla-black) !important; }
+.text-\[\#04050A\] { color: var(--gorilla-white) !important; }
+.border-\[\#04050A\] { border-color: var(--gorilla-cyan) !important; }
+.shadow-\[6px_6px_0_\#04050A\],
+.shadow-\[8px_8px_0_\#04050A\] { box-shadow: 7px 7px 0 var(--gorilla-pink) !important; }
+
 ::selection { background: var(--gorilla-pink); color: var(--gorilla-black); }
 :focus-visible { outline: 3px solid var(--gorilla-aqua); outline-offset: 3px; }
 
