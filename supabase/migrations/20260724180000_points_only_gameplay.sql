@@ -3,6 +3,20 @@
 -- target before the room can finish.
 begin;
 
+-- Relax the legacy requirement before existing rooms can drop their round limit.
+alter table public.game_rooms
+  alter column rounds_to_play drop not null,
+  alter column rounds_to_play drop default;
+
+-- Remove every legacy rounds-only rule before converting existing rooms.
+alter table public.game_rooms
+  drop constraint if exists game_rooms_check,
+  drop constraint if exists game_rooms_rounds_only_check,
+  drop constraint if exists game_rooms_rounds_to_play_check,
+  drop constraint if exists game_rooms_target_points_check,
+  drop constraint if exists game_rooms_victory_mode_check,
+  drop constraint if exists game_rooms_win_by_check;
+
 update public.game_rooms
 set
   victory_mode = 'first_to',
@@ -16,20 +30,10 @@ set
 alter table public.game_rooms
   alter column victory_mode set default 'first_to',
   alter column victory_mode set not null,
-  alter column rounds_to_play drop not null,
-  alter column rounds_to_play drop default,
   alter column target_points set default 10,
   alter column target_points set not null,
   alter column win_by set default 1,
   alter column win_by set not null;
-
-alter table public.game_rooms
-  drop constraint if exists game_rooms_check,
-  drop constraint if exists game_rooms_rounds_only_check,
-  drop constraint if exists game_rooms_rounds_to_play_check,
-  drop constraint if exists game_rooms_target_points_check,
-  drop constraint if exists game_rooms_victory_mode_check,
-  drop constraint if exists game_rooms_win_by_check;
 
 alter table public.game_rooms
   add constraint game_rooms_points_only_check
