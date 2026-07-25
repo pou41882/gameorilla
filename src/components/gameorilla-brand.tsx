@@ -93,19 +93,35 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
 
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-[21%] bottom-0 h-[20.5%] overflow-hidden bg-[#04050A]"
+        className="pointer-events-none absolute inset-x-[21%] bottom-0 h-[20.5%] overflow-hidden bg-[#070A1F]"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(180deg, rgba(39,231,226,.14) 0 1px, transparent 1px 7px)",
+        }}
       >
-        <span className="absolute left-[5%] top-[7%] h-[4%] w-[90%] bg-[#FF3EA8]" />
-        <span className="absolute left-[14%] top-[17%] h-[3%] w-[72%] bg-[#5130C9]" />
-        <span className="absolute left-[4%] top-[26%] h-[3%] w-[38%] bg-[#27E7E2]" />
-        <span className="absolute right-[4%] top-[26%] h-[3%] w-[42%] bg-[#27E7E2]" />
-        <span className="absolute left-[24%] top-[35%] h-[3%] w-[52%] bg-[#8D46FF]" />
-        <span className="absolute left-[8%] top-[74%] h-[3%] w-[31%] bg-[#FF3EA8]" />
-        <span className="absolute right-[8%] top-[74%] h-[3%] w-[37%] bg-[#FF3EA8]" />
-        <span className="absolute left-[18%] top-[84%] h-[3%] w-[64%] bg-[#5130C9]" />
-        <span className="absolute left-[32%] top-[93%] h-[3%] w-[36%] bg-[#27E7E2]" />
+        <span className="absolute left-[3%] top-[3%] h-[3%] w-[42%] bg-[#FF3EA8]" />
+        <span className="absolute right-[5%] top-[3%] h-[3%] w-[37%] bg-[#8D46FF]" />
+        <span className="absolute left-[12%] top-[10%] h-[2%] w-[76%] bg-[#27E7E2]" />
+        <span className="absolute left-[1%] top-[17%] h-[3%] w-[28%] bg-[#5130C9]" />
+        <span className="absolute left-[38%] top-[17%] h-[3%] w-[23%] bg-[#FF3EA8]" />
+        <span className="absolute right-[2%] top-[17%] h-[3%] w-[27%] bg-[#5130C9]" />
+        <span className="absolute left-[8%] top-[25%] h-[3%] w-[37%] bg-[#5BFFF3]" />
+        <span className="absolute right-[8%] top-[25%] h-[3%] w-[39%] bg-[#5BFFF3]" />
+        <span className="absolute left-[20%] top-[33%] h-[3%] w-[61%] bg-[#8D46FF]" />
+        <span className="absolute left-[4%] top-[41%] h-[2%] w-[22%] bg-[#FF3EA8]" />
+        <span className="absolute left-[31%] top-[41%] h-[2%] w-[38%] bg-[#5130C9]" />
+        <span className="absolute right-[4%] top-[41%] h-[2%] w-[21%] bg-[#FF3EA8]" />
+        <span className="absolute left-[10%] top-[58%] h-[2%] w-[31%] bg-[#27E7E2]" />
+        <span className="absolute right-[9%] top-[58%] h-[2%] w-[34%] bg-[#27E7E2]" />
+        <span className="absolute left-[2%] top-[67%] h-[3%] w-[25%] bg-[#5130C9]" />
+        <span className="absolute left-[34%] top-[67%] h-[3%] w-[32%] bg-[#FF3EA8]" />
+        <span className="absolute right-[2%] top-[67%] h-[3%] w-[24%] bg-[#5130C9]" />
+        <span className="absolute left-[14%] top-[76%] h-[3%] w-[72%] bg-[#8D46FF]" />
+        <span className="absolute left-[4%] top-[85%] h-[2%] w-[39%] bg-[#FF3EA8]" />
+        <span className="absolute right-[4%] top-[85%] h-[2%] w-[43%] bg-[#FF3EA8]" />
+        <span className="absolute left-[24%] top-[94%] h-[2%] w-[52%] bg-[#27E7E2]" />
       </span>
-      <span className="pointer-events-none absolute inset-x-[16%] bottom-[9.7%] text-center text-[clamp(.5rem,2.15vw,1.4rem)] font-black lowercase leading-none tracking-[.18em] text-[#27E7E2]">
+      <span className="pointer-events-none absolute inset-x-[16%] bottom-[9.7%] text-center text-[clamp(.5rem,2.15vw,1.4rem)] font-black lowercase leading-none tracking-[.18em] text-[#F3F6FF] [text-shadow:2px_2px_0_#04050A]">
         the ape vice arkade
       </span>
     </span>
