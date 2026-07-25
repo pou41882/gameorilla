@@ -70,7 +70,7 @@ Mack Rilla is Gameorilla's named host and merch anchor. His face, controller-eye
 
 - Default Mack Rilla asset: static face over a small set of bold horizontal stripes or a single-color field.
 - Merch rule: the face must work in one color, two colors, or the full Vice palette without extra scenery.
-- Hero rule: use the supplied waterfront title art edge to edge. Replace only the moon interior with the supplied clean striped Mack Rilla portrait, keep all city and palms outside the circle, and apply the documented white O.
+- Hero rule: use the supplied waterfront title art edge to edge. Mask the original moon interior, then place the supplied clean striped Mack Rilla portrait as a smaller complete circle with clear vertical separation above the shoreline wordmark. Keep all city and palms outside the circle, apply the documented white O, and place “the ape vice arkade” inside the title picture beneath GAMEORILLA.
 - Transition rule: Mack may leave the badge only for short, original pixel vignettes—a top-down 1960s convertible cruise, a diner fly-in, a rooftop DJ set, or a winner celebration. The scene stays clean: one action, one vehicle or object, one joke, then back to play.
 - Character rule: Mack is cool, helpful, and unbothered. He does not carry weapons or threaten people; a crossing paddle, hazard flag, or flashing sign carries a helpful street-crossing gag without changing his tone.
 
@@ -100,7 +100,7 @@ Black is the canvas. Cyan is the structural signal. Pink is the selected or exci
 4. A short PRESS START or direct action prompt.
 5. A small bottom strip for the current cabinet, target, or instruction.
 
-The live home screen is the canonical example. Its locked title-card order is: POUNDTOWN GAMES PRESENTS / GAMEORILLA / the ape vice arkade. The supplied Gameorilla title art remains unaltered in the center.
+The live home screen is the canonical example. Its locked title-card order inside one picture is: POUNDTOWN GAMES PRESENTS / complete Mack Rilla circle / GAMEORILLA / the ape vice arkade. Mack's face and striped circle must not be covered by the wordmark. Outside and immediately below that picture, the first visible copy begins “THE NEON AFTER-HOURS…”; do not repeat the tagline there.
 
 ### Pop-ups and micro-scenes
 
@@ -190,9 +190,10 @@ Casual wording—crew, stack, vice, peel, bananas—must stay welcoming. Never l
 | 2026-07-25 | Added character and situation pop-ups as a core interaction pattern. | Makes the world feel lived in while always giving the player a clear next move. |
 | 2026-07-25 | Rejected direct imitation of existing game franchises. | Protects Gameorilla's own identity while preserving the era's clarity. |
 | 2026-07-25 | Named Mack Rilla as the house gorilla and adopted the static-face / dynamic-stripe system. | Gives the brand a simple, repeatable mascot language for product, transitions, and future merch. |
-| 2026-07-25 | Locked the home title card: PoundTown Games Presents / Gameorilla / The the ape vice arkade. | Makes the parent brand, product, and world legible in one clean arcade read. |
+| 2026-07-25 | Locked the home title card: PoundTown Games Presents / Mack Rilla / GAMEORILLA / the ape vice arkade. | Makes the parent brand, mascot, product, and world legible in one clean arcade read. |
 | 2026-07-25 | Locked the continuous GAMEORILLA wordmark with a third-color O and named Mack Rilla. | Protects the transition-letter system and gives the mascot a permanent name. |
 | 2026-07-25 | Set three active players as the minimum for Fill in the Blank. | Keeps voting functional and makes the UI and database enforce the same room rule. |
 | 2026-07-25 | Adopted the supplied audio identity sheet as canonical. | Gives future games one consistent system for navigation, wins, errors, timers, and loops. |
 | 2026-07-25 | Renamed the tagline to “the ape vice arkade.” | Adds the Arkansas nod and locks the tagline as one lowercase, single-color line. |
 | 2026-07-25 | Made the GAMEORILLA O white and cleaned the moon behind Mack Rilla. | Keeps the wordmark transition clear and separates the mascot badge from the outside waterfront scenery. |
+| 2026-07-25 | Separated Mack's complete striped circle from the shoreline wordmark and moved the tagline into the title picture. | Protects Mack's face, creates a cleaner vertical title stack, and removes the duplicate tagline below the art. |
