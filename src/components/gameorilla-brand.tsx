@@ -43,7 +43,7 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
 
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute left-[28.7%] top-[3.9%] aspect-square w-[44.3%] rounded-full bg-[#04050A]"
+        className="pointer-events-none absolute left-[28.4%] top-[3.2%] h-[61.5%] w-[44.8%] bg-[#04050A]"
       />
 
       <span
@@ -83,7 +83,7 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-[21%] bottom-0 h-[20.5%] bg-[#04050A]"
       />
-      <span className="pointer-events-none absolute inset-x-[16%] bottom-[6.4%] text-center text-[clamp(.5rem,2.15vw,1.4rem)] font-black lowercase leading-none tracking-[.18em] text-[#27E7E2]">
+      <span className="pointer-events-none absolute inset-x-[16%] bottom-[9.7%] text-center text-[clamp(.5rem,2.15vw,1.4rem)] font-black lowercase leading-none tracking-[.18em] text-[#27E7E2]">
         the ape vice arkade
       </span>
     </span>
