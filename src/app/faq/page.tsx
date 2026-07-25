@@ -9,6 +9,12 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <SiteShell eyebrow="Good questions" title="Frequently asked questions" intro="The short version: bring a browser, a few friends, and your best questionable judgment.">
+      <InfoCard title="Why is it spelled arkade?">
+        <p>Because while the developer has just moved to BKNY, said developer is from Arkansaw.</p>
+      </InfoCard>
+      <InfoCard title="Why did the developer move to BKNY?">
+        <p>For three girls.</p>
+      </InfoCard>
       <InfoCard title="Does everyone need an account?">
         <p>No. Gameorilla creates a temporary anonymous game session in your browser so it can restore your room after a refresh.</p>
       </InfoCard>
