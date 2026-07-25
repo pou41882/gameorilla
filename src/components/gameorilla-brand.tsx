@@ -43,7 +43,12 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
 
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute left-[28.7%] top-[3.9%] aspect-square w-[44.3%] overflow-hidden rounded-full bg-[#04050A]"
+        className="pointer-events-none absolute left-[28.7%] top-[3.9%] aspect-square w-[44.3%] rounded-full bg-[#04050A]"
+      />
+
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-[33%] top-[3.2%] aspect-square w-[34%] overflow-hidden rounded-full bg-[#04050A]"
       >
         <img
           src="/mack-rilla-stripes.svg"
@@ -73,6 +78,14 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
         style={whiteO}
         className="pointer-events-none absolute inset-0 h-auto w-full object-contain [clip-path:inset(80.4%_45.1%_7.7%_48.6%)] [image-rendering:pixelated]"
       />
+
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-[21%] bottom-0 h-[20.5%] bg-[#04050A]"
+      />
+      <span className="pointer-events-none absolute inset-x-[16%] bottom-[6.4%] text-center text-[clamp(.5rem,2.15vw,1.4rem)] font-black lowercase leading-none tracking-[.18em] text-[#27E7E2]">
+        the ape vice arkade
+      </span>
     </span>
   );
 }
