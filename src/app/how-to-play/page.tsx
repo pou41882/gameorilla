@@ -19,7 +19,7 @@ export default function HowToPlayPage() {
       </InfoCard>
       <InfoCard title="2. Invite the players">
         <p>Players scan the lobby QR code or choose “Join a room,” enter the room name, and add a display name.</p>
-        <p>Three or more players gives the best voting experience, although two players works for testing.</p>
+        <p>Three players is the minimum. Invite up to eight players; three or more keeps voting fair and fun.</p>
       </InfoCard>
       <InfoCard title="3. Write and vote">
         <p>Everyone completes the same prompt. When answers are in—or the timer ends—the room votes.</p>
