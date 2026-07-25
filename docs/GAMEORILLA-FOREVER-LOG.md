@@ -12,7 +12,7 @@ Gameorilla should feel like an original arcade title screen you want to press st
 
 ## Source material and precedence
 
-1. The supplied brand-kit pages are the visual source of truth.
+1. The five supplied brand-kit pages were reviewed and compiled into this log. Their non-negotiable decisions are recorded below so this repository remains self-contained even when the original presentation images are unavailable.
 2. The supplied Gameorilla title artwork is fixed equity. Do not redraw, crop, recolor, trace, or alter it.
 3. This log governs future product decisions. If a choice conflicts with the kit, preserve the supplied kit and record the new decision here.
 
@@ -29,6 +29,16 @@ Use original console-era arcade grammar, not a generic retro effect.
 - Pixel geometry, stepped bands, and short looping motion—not glossy gradients, soft cards, or dashboard chrome.
 
 This is inspiration from an era's interaction grammar, not a license to copy any company's characters, names, art, sounds, logos, level layouts, or typography. Everything shipped remains original Gameorilla work.
+
+### Original-kit record
+
+| Supplied page | Durable decision captured here |
+| --- | --- |
+| Cover / brand kit | Gameorilla is a pixel-first Vice Arcade for PoundTown Games. |
+| Brand world | Old arcade soul, nightlife energy, and a multi-game social world share one roof. |
+| Color + type | Midnight black, cyan/aqua, pink, purple, coral, pixel white, and bitmap-first typography. |
+| Logo + art direction | A chill neon ape with controller-eye glasses; no photorealism, smooth vector rework, or childlike toy energy. |
+| Audio system | 8-bit + 16-bit/FM/PSG sound, short clear UI cues, rising wins, descending errors, and hook-first loops. |
 
 ## Fixed identity
 
