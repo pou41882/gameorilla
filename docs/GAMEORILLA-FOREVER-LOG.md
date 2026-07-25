@@ -53,6 +53,16 @@ Gameorilla is Ape Vice Arcade: a neon after-hours city of social games, palms, s
 - Use the supplied mark at its natural pixel proportions.
 - Never make a photorealistic ape, smooth-vector remake, or different controller-eye shape.
 
+### Mack: the house gorilla
+
+Mack is Gameorilla's named host and merch anchor. His face, controller-eye glasses, relaxed expression, and silhouette stay static and instantly recognizable. The world around him does the moving: broad stepped stripes, color bands, score flashes, simple platform geometry, and occasional neon scene changes.
+
+- Default Mack asset: static face over a small set of bold horizontal stripes or a single-color field.
+- Merch rule: the face must work in one color, two colors, or the full Vice palette without extra scenery.
+- Hero rule: use the full supplied Gameorilla title art unchanged when the logo is the title card.
+- Transition rule: Mack may leave the badge only for short, original pixel vignettes—a top-down 1960s convertible cruise, a diner fly-in, a rooftop DJ set, or a winner celebration. The scene stays clean: one action, one vehicle or object, one joke, then back to play.
+- Character rule: Mack is cool, helpful, and unbothered. He does not carry weapons or threaten people; a crossing paddle, hazard flag, or flashing sign carries a helpful street-crossing gag without changing his tone.
+
 ### Palette
 
 | Role | Token | Value |
@@ -79,7 +89,7 @@ Black is the canvas. Cyan is the structural signal. Pink is the selected or exci
 4. A short PRESS START or direct action prompt.
 5. A small bottom strip for the current cabinet, target, or instruction.
 
-The live home screen is the canonical example.
+The live home screen is the canonical example. Its locked title-card order is: POUNDTOWN GAMES PRESENTS / GAMEORILLA / THE APE VICE ARCADE. The supplied Gameorilla title art remains unaltered in the center.
 
 ### Pop-ups and micro-scenes
 
@@ -163,3 +173,5 @@ Casual wording—crew, stack, vice, peel, bananas—must stay welcoming. Never l
 | 2026-07-25 | Designated the title-screen home page as the canonical recipe. | Gives future games and support surfaces a concrete hierarchy. |
 | 2026-07-25 | Added character and situation pop-ups as a core interaction pattern. | Makes the world feel lived in while always giving the player a clear next move. |
 | 2026-07-25 | Rejected direct imitation of existing game franchises. | Protects Gameorilla's own identity while preserving the era's clarity. |
+| 2026-07-25 | Named Mack as the house gorilla and adopted the static-face / dynamic-stripe system. | Gives the brand a simple, repeatable mascot language for product, transitions, and future merch. |
+| 2026-07-25 | Locked the home title card: PoundTown Games Presents / Gameorilla / The Ape Vice Arcade. | Makes the parent brand, product, and world legible in one clean arcade read. |
