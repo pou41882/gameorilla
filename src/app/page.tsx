@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { GameorillaLogo } from "@/components/gameorilla-brand";
+import { GameorillaLogo, GameorillaWordmark, MackMoon } from "@/components/gameorilla-brand";
 
 const footerLinks = [
   ["How to play", "/how-to-play"],
@@ -19,6 +19,26 @@ export default function HomePage() {
           <p><span className="block text-[#FF3EA8]">Vice Meter</span>Level 01</p>
         </header>
 
+        <div className="relative isolate overflow-hidden border-b-4 border-[#27E7E2] bg-[#04050A]">
+          <GameorillaLogo className="block h-auto w-full max-w-none [image-rendering:pixelated]" />
+          <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#04050A]/90 to-transparent sm:h-32" />
+          <p className="absolute left-1/2 top-3 -translate-x-1/2 whitespace-nowrap border-2 border-[#FF3EA8] bg-[#04050A] px-3 py-1 text-center text-[9px] font-black uppercase tracking-[.18em] text-[#FF3EA8] sm:top-5 sm:text-xs">
+            PoundTown Games presents
+          </p>
+
+          <div className="pointer-events-none absolute left-1/2 top-[23%] w-[31%] min-w-[118px] max-w-[330px] -translate-x-1/2">
+            <MackMoon className="h-auto w-full drop-shadow-[0_0_16px_#27E7E2]" />
+          </div>
+
+          <div className="absolute inset-x-0 bottom-0 border-t-4 border-[#27E7E2] bg-[#04050A] px-3 py-3 text-center sm:px-6 sm:py-5">
+            <GameorillaWordmark className="text-[clamp(2rem,8.9vw,5.7rem)]" />
+            <h1 className="sr-only">PoundTown Games Presents Gameorilla: The Ape Vice Arcade</h1>
+            <p className="mt-2 text-[10px] font-black uppercase tracking-[.24em] text-[#F3F6FF] sm:text-sm">
+              The Ape Vice Arcade
+            </p>
+          </div>
+        </div>
+
         <div className="relative isolate overflow-hidden bg-[radial-gradient(circle_at_50%_28%,#5130c9_0,transparent_34%),linear-gradient(#04050A_0_58%,#120a23_58%_100%)] px-4 py-8 sm:px-10 sm:py-12">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-[-1] opacity-25 [background-image:linear-gradient(rgb(91_255_243_/_0.26)_1px,transparent_1px),linear-gradient(90deg,rgb(255_62_168_/_0.2)_1px,transparent_1px)] [background-size:20px_20px]" />
           <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-12 border-t-4 border-[#FF3EA8] bg-[repeating-linear-gradient(90deg,#5130C9_0_22px,#8D46FF_22px_44px)] opacity-90 sm:h-16" />
@@ -26,15 +46,7 @@ export default function HomePage() {
           <div aria-hidden="true" className="absolute bottom-8 right-4 hidden text-5xl font-black leading-none text-[#FF3EA8] sm:block">▙▙</div>
 
           <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
-            <p className="border-2 border-[#FF3EA8] bg-[#04050A] px-3 py-1 text-[10px] font-black uppercase tracking-[.18em] text-[#FF3EA8] sm:text-xs">
-              PoundTown Games presents
-            </p>
-            <GameorillaLogo className="mt-5 h-auto w-full max-w-[700px] [image-rendering:pixelated]" />
-            <h1 className="sr-only">PoundTown Games Presents Gameorilla: The Ape Vice Arcade</h1>
-            <p className="mt-3 text-xs font-black uppercase tracking-[.24em] text-[#F3F6FF] sm:text-sm">
-              The Ape Vice Arcade
-            </p>
-            <p className="mt-3 max-w-xl text-xs font-black uppercase leading-relaxed tracking-[.13em] text-[#27E7E2] sm:text-sm">
+            <p className="max-w-xl text-xs font-black uppercase leading-relaxed tracking-[.13em] text-[#27E7E2] sm:text-sm">
               The neon after-hours party cabinet. Bring your crew. Stack bananas. Make the room laugh.
             </p>
 
