@@ -26,7 +26,7 @@ export default function HomePage() {
             PoundTown Games presents
           </p>
 
-          <div className="pointer-events-none absolute left-1/2 top-[10%] w-[25%] min-w-[104px] max-w-[270px] -translate-x-1/2">
+          <div className="pointer-events-none absolute left-1/2 top-[5%] w-[47%] min-w-[164px] max-w-[500px] -translate-x-1/2">
             <MackMoon className="h-auto w-full drop-shadow-[0_0_16px_#27E7E2]" />
           </div>
 
