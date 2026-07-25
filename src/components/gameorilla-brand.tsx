@@ -31,25 +31,47 @@ export function GameorillaMark({ className, ...props }: MarkProps) {
 
 export function GameorillaLogo({ className = "" }: LogoProps) {
   const sizing = className || "w-full max-w-56";
+  const whiteO = { filter: "grayscale(1) brightness(4)" };
 
   return (
-    <span className={`relative block ${sizing}`}>
+    <span className={`relative block overflow-hidden bg-[#04050A] ${sizing}`}>
       <img
         src="/og-gameorilla.png"
-        alt="Gameorilla: The Ape Vice Arcade"
+        alt="Gameorilla: the ape vice arkade"
         className="block h-auto w-full object-contain [image-rendering:pixelated]"
       />
+
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-[28.7%] top-[3.9%] aspect-square w-[44.3%] overflow-hidden rounded-full bg-[#04050A]"
+      >
+        <img
+          src="/mack-rilla-stripes.svg"
+          alt=""
+          className="absolute left-[-9.1%] top-[-18.7%] h-auto w-[118.4%] max-w-none [image-rendering:pixelated]"
+        />
+      </span>
+
       <img
         src="/og-gameorilla.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 h-auto w-full object-contain [clip-path:inset(64.7%_45.1%_18.1%_48.6%)] [filter:hue-rotate(72deg)_saturate(1.15)_brightness(1.08)] [image-rendering:pixelated]"
+        className="pointer-events-none absolute inset-0 h-auto w-full object-contain [clip-path:inset(64.7%_0_0_0)] [image-rendering:pixelated]"
+      />
+
+      <img
+        src="/og-gameorilla.png"
+        alt=""
+        aria-hidden="true"
+        style={whiteO}
+        className="pointer-events-none absolute inset-0 h-auto w-full object-contain [clip-path:inset(64.7%_45.1%_18.1%_48.6%)] [image-rendering:pixelated]"
       />
       <img
         src="/og-gameorilla.png"
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 h-auto w-full object-contain [clip-path:inset(80.4%_45.1%_7.7%_48.6%)] [filter:hue-rotate(72deg)_saturate(1.15)_brightness(1.08)] [image-rendering:pixelated]"
+        style={whiteO}
+        className="pointer-events-none absolute inset-0 h-auto w-full object-contain [clip-path:inset(80.4%_45.1%_7.7%_48.6%)] [image-rendering:pixelated]"
       />
     </span>
   );
