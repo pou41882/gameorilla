@@ -59,7 +59,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <p className="absolute left-1/2 top-[4%] z-10 -translate-x-1/2 whitespace-nowrap border-2 border-[#FF3EA8] bg-[#04050A]/90 px-3 py-1 text-[8px] font-black uppercase tracking-[.18em] text-[#FF3EA8] sm:text-xs">
+          <p className="absolute left-1/2 top-[4%] z-10 -translate-x-1/2 whitespace-nowrap border-2 border-[#FF9A1F] bg-[#04050A]/90 px-3 py-1 text-[8px] font-black uppercase tracking-[.18em] text-[#FF9A1F] sm:text-xs">
             PoundTown Games presents
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function HomePage() {
           <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
             <h1 className="sr-only">PoundTown Games presents Gameorilla: the ape vice arkade</h1>
             <p className="max-w-xl text-xs font-black uppercase leading-relaxed tracking-[.13em] text-[#F3F6FF] sm:text-sm">
-              <span className="block">The neon after-hours party cabinet.</span>
+              <span className="block">Your neon after-hours party primate.</span>
               <span className="block">Bring your crew. Stack bananas. Go ape s***.</span>
             </p>
 
