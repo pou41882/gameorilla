@@ -93,34 +93,75 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
 
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-[21%] bottom-0 h-[20.5%] overflow-hidden bg-[#070A1F]"
+        className="pointer-events-none absolute inset-x-[18%] bottom-0 h-[20.5%] overflow-hidden"
         style={{
-          backgroundImage:
-            "repeating-linear-gradient(180deg, rgba(39,231,226,.14) 0 1px, transparent 1px 7px)",
+          backgroundColor: "rgba(5, 8, 21, .84)",
+          backgroundImage: [
+            "repeating-linear-gradient(180deg, transparent 0 3px, rgba(4,5,10,.34) 3px 5px, transparent 5px 9px)",
+            "radial-gradient(ellipse at 50% 0%, rgba(39,231,226,.9) 0%, rgba(39,231,226,.32) 46%, transparent 80%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(81,48,201,.78) 0%, rgba(81,48,201,.24) 48%, transparent 82%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(255,62,168,.78) 0%, rgba(255,62,168,.24) 45%, transparent 80%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(91,255,243,.82) 0%, rgba(91,255,243,.22) 46%, transparent 78%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(39,231,226,.8) 0%, rgba(39,231,226,.22) 52%, transparent 84%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(243,246,255,.66) 0%, rgba(243,246,255,.16) 48%, transparent 76%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(255,62,168,.88) 0%, rgba(255,62,168,.3) 48%, transparent 82%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(141,70,255,.78) 0%, rgba(141,70,255,.22) 46%, transparent 80%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(255,94,120,.82) 0%, rgba(255,62,168,.22) 50%, transparent 84%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(39,231,226,.78) 0%, rgba(39,231,226,.2) 48%, transparent 78%)",
+            "radial-gradient(ellipse at 50% 0%, rgba(255,62,168,.84) 0%, rgba(255,62,168,.26) 48%, transparent 82%)",
+            "linear-gradient(90deg, rgba(39,231,226,.08), rgba(81,48,201,.12) 48%, rgba(255,62,168,.1))",
+          ].join(","),
+          backgroundSize: [
+            "100% 9px",
+            "14% 98%",
+            "9% 74%",
+            "11% 88%",
+            "8% 64%",
+            "13% 96%",
+            "8% 72%",
+            "13% 98%",
+            "9% 76%",
+            "14% 92%",
+            "8% 68%",
+            "13% 98%",
+            "100% 100%",
+          ].join(","),
+          backgroundPosition: [
+            "0 0",
+            "-2% 0",
+            "10% 0",
+            "19% 0",
+            "29% 0",
+            "37% 0",
+            "49% 0",
+            "56% 0",
+            "68% 0",
+            "76% 0",
+            "88% 0",
+            "96% 0",
+            "0 0",
+          ].join(","),
+          backgroundRepeat: [
+            "repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+            "no-repeat",
+          ].join(","),
+          WebkitMaskImage:
+            "linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%)",
+          maskImage:
+            "linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%)",
         }}
-      >
-        <span className="absolute left-[3%] top-[3%] h-[3%] w-[42%] bg-[#FF3EA8]" />
-        <span className="absolute right-[5%] top-[3%] h-[3%] w-[37%] bg-[#8D46FF]" />
-        <span className="absolute left-[12%] top-[10%] h-[2%] w-[76%] bg-[#27E7E2]" />
-        <span className="absolute left-[1%] top-[17%] h-[3%] w-[28%] bg-[#5130C9]" />
-        <span className="absolute left-[38%] top-[17%] h-[3%] w-[23%] bg-[#FF3EA8]" />
-        <span className="absolute right-[2%] top-[17%] h-[3%] w-[27%] bg-[#5130C9]" />
-        <span className="absolute left-[8%] top-[25%] h-[3%] w-[37%] bg-[#5BFFF3]" />
-        <span className="absolute right-[8%] top-[25%] h-[3%] w-[39%] bg-[#5BFFF3]" />
-        <span className="absolute left-[20%] top-[33%] h-[3%] w-[61%] bg-[#8D46FF]" />
-        <span className="absolute left-[4%] top-[41%] h-[2%] w-[22%] bg-[#FF3EA8]" />
-        <span className="absolute left-[31%] top-[41%] h-[2%] w-[38%] bg-[#5130C9]" />
-        <span className="absolute right-[4%] top-[41%] h-[2%] w-[21%] bg-[#FF3EA8]" />
-        <span className="absolute left-[10%] top-[58%] h-[2%] w-[31%] bg-[#27E7E2]" />
-        <span className="absolute right-[9%] top-[58%] h-[2%] w-[34%] bg-[#27E7E2]" />
-        <span className="absolute left-[2%] top-[67%] h-[3%] w-[25%] bg-[#5130C9]" />
-        <span className="absolute left-[34%] top-[67%] h-[3%] w-[32%] bg-[#FF3EA8]" />
-        <span className="absolute right-[2%] top-[67%] h-[3%] w-[24%] bg-[#5130C9]" />
-        <span className="absolute left-[14%] top-[76%] h-[3%] w-[72%] bg-[#8D46FF]" />
-        <span className="absolute left-[4%] top-[85%] h-[2%] w-[39%] bg-[#FF3EA8]" />
-        <span className="absolute right-[4%] top-[85%] h-[2%] w-[43%] bg-[#FF3EA8]" />
-        <span className="absolute left-[24%] top-[94%] h-[2%] w-[52%] bg-[#27E7E2]" />
-      </span>
+      />
       <span className="pointer-events-none absolute inset-x-[16%] bottom-[9.7%] text-center text-[clamp(.5rem,2.15vw,1.4rem)] font-black lowercase leading-none tracking-[.18em] text-[#F3F6FF] [text-shadow:2px_2px_0_#04050A]">
         the ape vice arkade
       </span>
