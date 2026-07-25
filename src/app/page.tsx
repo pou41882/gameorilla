@@ -26,11 +26,11 @@ export default function HomePage() {
             PoundTown Games presents
           </p>
 
-          <div className="pointer-events-none absolute left-1/2 top-[23%] w-[31%] min-w-[118px] max-w-[330px] -translate-x-1/2">
+          <div className="pointer-events-none absolute left-1/2 top-[10%] w-[25%] min-w-[104px] max-w-[270px] -translate-x-1/2">
             <MackMoon className="h-auto w-full drop-shadow-[0_0_16px_#27E7E2]" />
           </div>
 
-          <div className="absolute inset-x-0 bottom-0 border-t-4 border-[#27E7E2] bg-[#04050A] px-3 py-3 text-center sm:px-6 sm:py-5">
+          <div className="absolute inset-x-0 bottom-0 flex h-[38%] flex-col items-center justify-center border-t-4 border-[#27E7E2] bg-[#04050A] px-3 py-3 text-center sm:px-6 sm:py-5">
             <GameorillaWordmark className="text-[clamp(2rem,8.9vw,5.7rem)]" />
             <h1 className="sr-only">PoundTown Games Presents Gameorilla: The Ape Vice Arcade</h1>
             <p className="mt-2 text-[10px] font-black uppercase tracking-[.24em] text-[#F3F6FF] sm:text-sm">
