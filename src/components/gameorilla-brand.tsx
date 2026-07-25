@@ -43,7 +43,19 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
 
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute left-[28.4%] top-[3.2%] h-[61.5%] w-[44.8%] bg-[#04050A]"
+        className="pointer-events-none absolute left-[28.4%] top-[3.2%] h-[56.5%] w-[44.8%] bg-[#04050A]"
+        style={{
+          backgroundImage: [
+            "radial-gradient(circle at 8% 18%, #F3F6FF 0 1px, transparent 1.6px)",
+            "radial-gradient(circle at 18% 42%, #27E7E2 0 1px, transparent 1.6px)",
+            "radial-gradient(circle at 30% 9%, #FF3EA8 0 1px, transparent 1.6px)",
+            "radial-gradient(circle at 42% 31%, #F3F6FF 0 1px, transparent 1.6px)",
+            "radial-gradient(circle at 56% 14%, #8D46FF 0 1px, transparent 1.6px)",
+            "radial-gradient(circle at 68% 38%, #27E7E2 0 1px, transparent 1.6px)",
+            "radial-gradient(circle at 80% 20%, #F3F6FF 0 1px, transparent 1.6px)",
+            "radial-gradient(circle at 92% 47%, #FF3EA8 0 1px, transparent 1.6px)",
+          ].join(","),
+        }}
       />
 
       <span
@@ -81,8 +93,18 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
 
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-[21%] bottom-0 h-[20.5%] bg-[#04050A]"
-      />
+        className="pointer-events-none absolute inset-x-[21%] bottom-0 h-[20.5%] overflow-hidden bg-[#04050A]"
+      >
+        <span className="absolute left-[5%] top-[7%] h-[4%] w-[90%] bg-[#FF3EA8]" />
+        <span className="absolute left-[14%] top-[17%] h-[3%] w-[72%] bg-[#5130C9]" />
+        <span className="absolute left-[4%] top-[26%] h-[3%] w-[38%] bg-[#27E7E2]" />
+        <span className="absolute right-[4%] top-[26%] h-[3%] w-[42%] bg-[#27E7E2]" />
+        <span className="absolute left-[24%] top-[35%] h-[3%] w-[52%] bg-[#8D46FF]" />
+        <span className="absolute left-[8%] top-[74%] h-[3%] w-[31%] bg-[#FF3EA8]" />
+        <span className="absolute right-[8%] top-[74%] h-[3%] w-[37%] bg-[#FF3EA8]" />
+        <span className="absolute left-[18%] top-[84%] h-[3%] w-[64%] bg-[#5130C9]" />
+        <span className="absolute left-[32%] top-[93%] h-[3%] w-[36%] bg-[#27E7E2]" />
+      </span>
       <span className="pointer-events-none absolute inset-x-[16%] bottom-[9.7%] text-center text-[clamp(.5rem,2.15vw,1.4rem)] font-black lowercase leading-none tracking-[.18em] text-[#27E7E2]">
         the ape vice arkade
       </span>
