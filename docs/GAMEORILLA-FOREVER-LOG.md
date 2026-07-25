@@ -2,7 +2,7 @@
 
 **Status:** active design standard  
 **Last updated:** July 25, 2026  
-**Applies to:** Gameorilla, Ape Vice Arcade, every game, support surface, social card, sound cue, and future campaign.
+**Applies to:** Gameorilla, the ape vice arkade, every game, support surface, social card, sound cue, and future campaign.
 
 This is the permanent decision record for Gameorilla. It combines the supplied Gameorilla brand kit with the approved direction: clean, original console-era arcade clarity filtered through Gameorilla's neon Vice world.
 
@@ -13,7 +13,7 @@ Gameorilla should feel like an original arcade title screen you want to press st
 ## Source material and precedence
 
 1. The five supplied brand-kit pages were reviewed and compiled into this log. Their non-negotiable decisions are recorded below so this repository remains self-contained even when the original presentation images are unavailable.
-2. The supplied waterfront title artwork is fixed equity. Preserve Mack Rilla’s head, the stepped moon, skyline, shoreline, water, reflections, crop, proportions, and pixel structure. The only approved correction is the canonical third-color O treatment recorded below.
+2. The supplied waterfront title artwork is fixed equity. Preserve the outside skyline and palms, shoreline, water, reflections, proportions, and pixel structure. The circle behind Mack Rilla uses the supplied clean striped portrait with no palms or buildings inside it. The canonical white O treatment is recorded below.
 3. This log governs future product decisions. If a choice conflicts with the kit, preserve the supplied kit and record the new decision here.
 
 ## Approved design filter
@@ -44,7 +44,7 @@ This is inspiration from an era's interaction grammar, not a license to copy any
 
 ### World
 
-Gameorilla is Ape Vice Arcade: a neon after-hours city of social games, palms, skyline, water, music, cool apes, and bananas. It is grown-up and playful—not aggressive, explicit, childlike, or casino-like.
+Gameorilla is the ape vice arkade: a neon after-hours city of social games, palms, skyline, water, music, cool apes, and bananas. It is grown-up and playful—not aggressive, explicit, childlike, or casino-like.
 
 ### Mascot and logo
 
@@ -58,7 +58,7 @@ Gameorilla is Ape Vice Arcade: a neon after-hours city of social games, palms, s
 GAMEORILLA is always one continuous word in one font, size, weight, baseline, and spacing system. The O is the transition between GAME and RILLA, but it never separates from the word or becomes a badge.
 
 - GAME = color A.
-- O = one solid third color C.
+- O = Pixel White (#F3F6FF) in the canonical GAMEORILLA title wordmark.
 - RILLA = color B.
 - Use color only to distinguish the O: no gap, italics, outline trick, size change, rotation, alternate font, or independent motion.
 - The shoreline reflection mirrors the same three-color split.
@@ -70,7 +70,7 @@ Mack Rilla is Gameorilla's named host and merch anchor. His face, controller-eye
 
 - Default Mack Rilla asset: static face over a small set of bold horizontal stripes or a single-color field.
 - Merch rule: the face must work in one color, two colors, or the full Vice palette without extra scenery.
-- Hero rule: use the full supplied waterfront Gameorilla title art as the title card. Preserve every visual element except the documented O color correction.
+- Hero rule: use the supplied waterfront title art edge to edge. Replace only the moon interior with the supplied clean striped Mack Rilla portrait, keep all city and palms outside the circle, and apply the documented white O.
 - Transition rule: Mack may leave the badge only for short, original pixel vignettes—a top-down 1960s convertible cruise, a diner fly-in, a rooftop DJ set, or a winner celebration. The scene stays clean: one action, one vehicle or object, one joke, then back to play.
 - Character rule: Mack is cool, helpful, and unbothered. He does not carry weapons or threaten people; a crossing paddle, hazard flag, or flashing sign carries a helpful street-crossing gag without changing his tone.
 
@@ -100,7 +100,7 @@ Black is the canvas. Cyan is the structural signal. Pink is the selected or exci
 4. A short PRESS START or direct action prompt.
 5. A small bottom strip for the current cabinet, target, or instruction.
 
-The live home screen is the canonical example. Its locked title-card order is: POUNDTOWN GAMES PRESENTS / GAMEORILLA / THE APE VICE ARCADE. The supplied Gameorilla title art remains unaltered in the center.
+The live home screen is the canonical example. Its locked title-card order is: POUNDTOWN GAMES PRESENTS / GAMEORILLA / the ape vice arkade. The supplied Gameorilla title art remains unaltered in the center.
 
 ### Pop-ups and micro-scenes
 
@@ -159,7 +159,7 @@ Casual wording—crew, stack, vice, peel, bananas—must stay welcoming. Never l
 - No photorealistic mascot art, copied game characters, copied layouts, copied music, copied title typography, or another brand's name in product copy.
 - No childlike toy energy and no violent, hostile, or real-money-gambling cues.
 - No long promotional paragraphs when a title, HUD label, or menu item will do.
-- No altered Gameorilla logo art beyond the documented O-only color correction.
+- No altered Gameorilla logo art beyond the documented white O and clean striped Mack Rilla moon treatment.
 
 ## Build decision tree
 
@@ -176,7 +176,7 @@ Casual wording—crew, stack, vice, peel, bananas—must stay welcoming. Never l
 - [ ] Uses the fixed palette and pixel-first hierarchy.
 - [ ] Has one obvious primary action and short, plain language.
 - [ ] Keeps black as the canvas and uses hard-edged, original arcade structure.
-- [ ] Preserves the supplied waterfront and Mack Rilla artwork; only the documented O color correction is allowed.
+- [ ] Preserves the waterfront, outside skyline, shoreline wordmark, and water; the moon contains only Mack Rilla over clean stripes, and the O is white.
 - [ ] Avoids copied IP and generic retro/SaaS failure modes.
 - [ ] Supports keyboard focus, contrast, small screens, and reduced motion.
 - [ ] Adds audio/motion only where it explains state or rewards play.
@@ -190,7 +190,9 @@ Casual wording—crew, stack, vice, peel, bananas—must stay welcoming. Never l
 | 2026-07-25 | Added character and situation pop-ups as a core interaction pattern. | Makes the world feel lived in while always giving the player a clear next move. |
 | 2026-07-25 | Rejected direct imitation of existing game franchises. | Protects Gameorilla's own identity while preserving the era's clarity. |
 | 2026-07-25 | Named Mack Rilla as the house gorilla and adopted the static-face / dynamic-stripe system. | Gives the brand a simple, repeatable mascot language for product, transitions, and future merch. |
-| 2026-07-25 | Locked the home title card: PoundTown Games Presents / Gameorilla / The Ape Vice Arcade. | Makes the parent brand, product, and world legible in one clean arcade read. |
+| 2026-07-25 | Locked the home title card: PoundTown Games Presents / Gameorilla / The the ape vice arkade. | Makes the parent brand, product, and world legible in one clean arcade read. |
 | 2026-07-25 | Locked the continuous GAMEORILLA wordmark with a third-color O and named Mack Rilla. | Protects the transition-letter system and gives the mascot a permanent name. |
 | 2026-07-25 | Set three active players as the minimum for Fill in the Blank. | Keeps voting functional and makes the UI and database enforce the same room rule. |
 | 2026-07-25 | Adopted the supplied audio identity sheet as canonical. | Gives future games one consistent system for navigation, wins, errors, timers, and loops. |
+| 2026-07-25 | Renamed the tagline to “the ape vice arkade.” | Adds the Arkansas nod and locks the tagline as one lowercase, single-color line. |
+| 2026-07-25 | Made the GAMEORILLA O white and cleaned the moon behind Mack Rilla. | Keeps the wordmark transition clear and separates the mascot badge from the outside waterfront scenery. |
