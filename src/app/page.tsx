@@ -27,10 +27,13 @@ export default function HomePage() {
 
           <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
             <p className="border-2 border-[#FF3EA8] bg-[#04050A] px-3 py-1 text-[10px] font-black uppercase tracking-[.18em] text-[#FF3EA8] sm:text-xs">
-              Ape Vice Arcade presents
+              PoundTown Games presents
             </p>
             <GameorillaLogo className="mt-5 h-auto w-full max-w-[700px] [image-rendering:pixelated]" />
-            <h1 className="sr-only">Gameorilla: Ape Vice Arcade</h1>
+            <h1 className="sr-only">PoundTown Games Presents Gameorilla: The Ape Vice Arcade</h1>
+            <p className="mt-3 text-xs font-black uppercase tracking-[.24em] text-[#F3F6FF] sm:text-sm">
+              The Ape Vice Arcade
+            </p>
             <p className="mt-3 max-w-xl text-xs font-black uppercase leading-relaxed tracking-[.13em] text-[#27E7E2] sm:text-sm">
               The neon after-hours party cabinet. Bring your crew. Stack bananas. Make the room laugh.
             </p>
