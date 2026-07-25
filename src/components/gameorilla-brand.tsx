@@ -30,11 +30,13 @@ export function GameorillaMark({ className, ...props }: MarkProps) {
 }
 
 export function GameorillaLogo({ className = "" }: LogoProps) {
+  const sizing = className || "h-16 w-auto max-w-44 sm:h-20 sm:max-w-56";
+
   return (
     <img
       src="/og-gameorilla.png"
       alt="Gameorilla: Vice Arcade"
-      className={`h-16 w-auto max-w-44 object-contain sm:h-20 sm:max-w-56 ${className}`}
+      className={`object-contain ${sizing}`}
     />
   );
 }
