@@ -70,7 +70,7 @@ Mack Rilla is Gameorilla's named host and merch anchor. His face, controller-eye
 
 - Default Mack Rilla asset: static face over a small set of bold horizontal stripes or a single-color field.
 - Merch rule: the face must work in one color, two colors, or the full Vice palette without extra scenery.
-- Hero rule: use the supplied waterfront title art edge to edge. Mask the original moon completely, then place the supplied clean striped Mack Rilla portrait as the only visible circle with clear vertical separation above the shoreline wordmark. Every non-logo opening in the upper title field continues the pixel star field; the entire field below GAMEORILLA continues the same soft, vertically stretched cyan, purple, and pink shoreline reflections used beneath the city, with only fine horizontal ripple bands. Stars and the outside cityscape remain the background; no second ring, flat black patch, or circle may remain. Apply the documented white O and place “the ape vice arkade” in Pixel White inside the reflected-water field close beneath GAMEORILLA.
+- Hero rule: use the supplied waterfront title art edge to edge. Mask the original moon completely, then place the supplied clean striped Mack Rilla portrait as the only visible circle with clear vertical separation above the shoreline wordmark. Every non-logo opening in the upper title field continues the pixel star field; the entire water field below GAMEORILLA uses the untouched original waterfront water and reflections across the full width; never place a synthetic center panel, gradient mask, or alternate ripple texture over it. Stars and the outside cityscape remain the background; no second ring, flat black patch, or circle may remain. Apply the documented white O and place “the ape vice arkade” in Pixel White inside the reflected-water field close beneath GAMEORILLA.
 - Transition rule: Mack may leave the badge only for short, original pixel vignettes—a top-down 1960s convertible cruise, a diner fly-in, a rooftop DJ set, or a winner celebration. The scene stays clean: one action, one vehicle or object, one joke, then back to play.
 - Character rule: Mack is cool, helpful, and unbothered. He does not carry weapons or threaten people; a crossing paddle, hazard flag, or flashing sign carries a helpful street-crossing gag without changing his tone.
 
@@ -100,7 +100,7 @@ Black is the canvas. Cyan is the structural signal. Pink is the selected or exci
 4. A short PRESS START or direct action prompt.
 5. A small bottom strip for the current cabinet, target, or instruction.
 
-The live home screen is the canonical example. Its locked title-card order inside one picture is: POUNDTOWN GAMES PRESENTS / complete Mack Rilla circle / GAMEORILLA / the ape vice arkade. Mack's face and striped circle must not be covered by the wordmark. Outside and immediately below that picture, the approved two-line copy is “THE NEON AFTER-HOURS PARTY CABINET.” / “BRING YOUR CREW. STACK BANANAS. GO APE S***.” Do not repeat the tagline there.
+The live home screen is the canonical example. Its locked title-card order inside one picture is: POUNDTOWN GAMES PRESENTS / complete Mack Rilla circle / GAMEORILLA / the ape vice arkade. Mack's face and striped circle must not be covered by the wordmark. Outside and immediately below that picture, the approved two-line copy is “YOUR NEON AFTER-HOURS PARTY PRIMATE.” / “BRING YOUR CREW. STACK BANANAS. GO APE S***.” Do not repeat the tagline there.
 
 ### Pop-ups and micro-scenes
 
@@ -199,4 +199,5 @@ Casual wording—crew, stack, vice, peel, bananas—must stay welcoming. Never l
 | 2026-07-25 | Separated Mack's complete striped circle from the shoreline wordmark and moved the tagline into the title picture. | Protects Mack's face, creates a cleaner vertical title stack, and removes the duplicate tagline below the art. |
 | 2026-07-25 | Removed the duplicate outer circle, lifted the Arkade tagline, and locked the two-line home invitation. | Leaves one unmistakable Mack Rilla badge against the star-and-city world and sharpens the page voice. |
 | 2026-07-25 | Extended stars and stepped neon water across the former masking gaps. | Removes dead black zones while keeping every logo letter, Mack, and the tagline crisp. |
-| 2026-07-25 | Matched the entire area under GAMEORILLA to the city's soft vertical shoreline reflections and made the Arkade tagline white. | Removes the separate striped panel, blends the center into the left and right water, and preserves maximum tagline contrast. |
+| 2026-07-25 | Restored the original waterfront water across the entire title card and made the Arkade tagline white. | Keeps one continuous, authentic reflection field with no synthetic center overlay. |
+| 2026-07-25 | Set the presenter banner in orange and changed the home invitation to “YOUR NEON AFTER-HOURS PARTY PRIMATE.” | Gives PoundTown Games a warm parent-brand accent and makes Mack part of the invitation. |
