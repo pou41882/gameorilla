@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://gameorilla.com"),
   title: {
-    default: "Gameorilla | Ape Vice Arcade",
+    default: "Gameorilla | the ape vice arkade",
     template: "%s | Gameorilla",
   },
   description: "A neon social arcade for quick rooms, wild prompts, and banana-fueled party games.",
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "Gameorilla",
-    title: "Gameorilla | Ape Vice Arcade",
+    title: "Gameorilla | the ape vice arkade",
     description: "Create a room, bring your crew, and play the arcade anywhere.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gameorilla | Ape Vice Arcade",
+    title: "Gameorilla | the ape vice arkade",
     description: "Create a room, bring your crew, and play the arcade anywhere.",
   },
 };
