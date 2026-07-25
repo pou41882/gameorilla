@@ -73,7 +73,8 @@ export default function HomePage() {
           <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
             <h1 className="sr-only">PoundTown Games presents Gameorilla: the ape vice arkade</h1>
             <p className="max-w-xl text-xs font-black uppercase leading-relaxed tracking-[.13em] text-[#F3F6FF] sm:text-sm">
-              The neon after-hours party cabinet. Bring your crew. Stack bananas. Make the room laugh.
+              <span className="block">The neon after-hours party cabinet.</span>
+              <span className="block">Bring your crew. Stack bananas. Go ape s***.</span>
             </p>
 
             <nav aria-label="Arcade start menu" className="mt-7 w-full max-w-md border-4 border-[#F3F6FF] bg-[#04050A] p-2 text-left shadow-[6px_6px_0_#5130C9] sm:p-3">
