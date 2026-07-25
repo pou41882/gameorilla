@@ -91,6 +91,26 @@ export function GameorillaLogo({ className = "" }: LogoProps) {
         className="pointer-events-none absolute inset-0 h-auto w-full object-contain [clip-path:inset(80.4%_45.1%_7.7%_48.6%)] [image-rendering:pixelated]"
       />
 
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-[25%] top-[80%] h-[20%] w-[25%] -scale-x-100 overflow-hidden"
+      >
+        <img
+          src="/og-gameorilla.png"
+          alt=""
+          className="absolute left-0 top-[-400%] h-[500%] w-auto max-w-none [image-rendering:pixelated]"
+        />
+      </span>
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-[50%] top-[80%] h-[20%] w-[25%] -scale-x-100 overflow-hidden"
+      >
+        <img
+          src="/og-gameorilla.png"
+          alt=""
+          className="absolute left-[-300%] top-[-400%] h-[500%] w-auto max-w-none [image-rendering:pixelated]"
+        />
+      </span>
       <span className="pointer-events-none absolute inset-x-[16%] bottom-[9.7%] text-center text-[clamp(.5rem,2.15vw,1.4rem)] font-black lowercase leading-none tracking-[.18em] text-[#F3F6FF] [text-shadow:2px_2px_0_#04050A]">
         the ape vice arkade
       </span>
