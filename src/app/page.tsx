@@ -1,80 +1,89 @@
 import Link from "next/link";
 import { GameorillaLogo } from "@/components/gameorilla-brand";
 
-const steps = [
-  ["01", "Pull up", "Create a private room and get a two-word room code."],
-  ["02", "Bring the crew", "Pass the code around. Everybody joins from their own phone."],
-  ["03", "Make it nasty", "Finish the prompt, vote for the sharpest answer, run it back."],
-];
+const footerLinks = [
+  ["How to play", "/how-to-play"],
+  ["FAQ", "/faq"],
+  ["Support", "/support"],
+  ["Privacy", "/privacy"],
+  ["Terms", "/terms"],
+] as const;
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen px-5 py-5 text-[#F3F6FF] sm:px-9 lg:px-14">
-      <div className="mx-auto max-w-6xl">
-        <header className="flex items-center justify-between gap-4 border-b-2 border-[#8D46FF] pb-5">
-          <GameorillaLogo />
-          <nav aria-label="Main navigation" className="hidden gap-5 text-xs font-black uppercase tracking-[.12em] text-[#27E7E2] sm:flex">
-            <Link href="/how-to-play" className="hover:text-[#FF3EA8]">How it works</Link>
-            <Link href="/support" className="hover:text-[#FF3EA8]">Help desk</Link>
-          </nav>
+    <main className="min-h-screen overflow-hidden bg-[#04050A] px-3 py-3 text-[#F3F6FF] sm:px-6 sm:py-6">
+      <section className="mx-auto max-w-[1080px] border-4 border-[#27E7E2] bg-[#04050A] shadow-[10px_10px_0_#FF3EA8] sm:shadow-[16px_16px_0_#FF3EA8]">
+        <header className="grid grid-cols-3 gap-2 border-b-4 border-[#27E7E2] bg-[#04050A] px-3 py-3 text-center text-[10px] font-black uppercase leading-tight tracking-[.08em] text-[#F3F6FF] sm:px-6 sm:text-sm">
+          <p><span className="block text-[#FF3EA8]">1UP</span>Bananas 00010</p>
+          <p><span className="block text-[#FF3EA8]">High Banana</span>01500</p>
+          <p><span className="block text-[#FF3EA8]">Vice Meter</span>Level 01</p>
         </header>
 
-        <section className="grid gap-9 py-16 lg:grid-cols-[1.2fr_.8fr] lg:py-24">
-          <div>
-            <p className="mb-5 inline-flex items-center gap-2 border-2 border-[#27E7E2] bg-[#04050A] px-3 py-2 text-xs font-black uppercase tracking-[.16em] text-[#27E7E2]">
-              <span className="h-2 w-2 bg-[#FF3EA8]" /> Open after dark
-            </p>
-            <h1 className="max-w-4xl text-5xl font-black leading-[.9] tracking-[-.08em] sm:text-7xl lg:text-8xl">
-              Ape Vice<br />
-              <span className="text-[#FF3EA8]">Arcade.</span>
-            </h1>
-            <p className="mt-7 max-w-xl text-base font-bold leading-relaxed text-[#F3F6FF]/80 sm:text-lg">
-              Quick rooms. Loud opinions. Banana stacks. Gameorilla is the neon
-              corner for a crew that wants one more round before the night peels out.
-            </p>
-            <div className="mt-9 flex flex-wrap gap-4">
-              <Link href="/games/fill-in-the-blank" className="border-2 border-[#27E7E2] bg-[#27E7E2] px-6 py-4 font-black text-[#04050A] shadow-[6px_6px_0_#FF3EA8] transition hover:-translate-y-1 hover:shadow-[9px_9px_0_#FF3EA8]">
-                Enter the arcade →
-              </Link>
-              <Link href="/how-to-play" className="border-2 border-[#8D46FF] px-6 py-4 font-black text-[#F3F6FF] transition hover:border-[#FF3EA8] hover:text-[#FF3EA8]">
-                Learn the rules
-              </Link>
-            </div>
-          </div>
+        <div className="relative isolate overflow-hidden bg-[radial-gradient(circle_at_50%_28%,#5130c9_0,transparent_34%),linear-gradient(#04050A_0_58%,#120a23_58%_100%)] px-4 py-8 sm:px-10 sm:py-12">
+          <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-[-1] opacity-25 [background-image:linear-gradient(rgb(91_255_243_/_0.26)_1px,transparent_1px),linear-gradient(90deg,rgb(255_62_168_/_0.2)_1px,transparent_1px)] [background-size:20px_20px]" />
+          <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-12 border-t-4 border-[#FF3EA8] bg-[repeating-linear-gradient(90deg,#5130C9_0_22px,#8D46FF_22px_44px)] opacity-90 sm:h-16" />
+          <div aria-hidden="true" className="absolute bottom-8 left-4 hidden text-5xl font-black leading-none text-[#27E7E2] sm:block">▟▟</div>
+          <div aria-hidden="true" className="absolute bottom-8 right-4 hidden text-5xl font-black leading-none text-[#FF3EA8] sm:block">▙▙</div>
 
-          <aside className="relative overflow-hidden border-2 border-[#FF3EA8] bg-[#04050A] p-7 shadow-[10px_10px_0_#5130C9]">
-            <div className="absolute inset-x-0 top-0 h-2 bg-[#FF3EA8]" />
-            <GameorillaLogo className="h-auto w-full max-w-none" />
-            <p className="mt-9 text-xs font-black uppercase tracking-[.16em] text-[#27E7E2]">Tonight&apos;s cabinet</p>
-            <h2 className="mt-3 text-3xl font-black tracking-[-.07em] text-[#F3F6FF]">Fill in the Blank</h2>
-            <p className="mt-4 leading-relaxed text-[#F3F6FF]/75">Finish the prompt. Vote for the line that hits hardest. No cash on the table—just bragging rights and banana energy.</p>
-            <Link href="/games/fill-in-the-blank" className="mt-7 inline-block text-sm font-black uppercase tracking-[.12em] text-[#FF3EA8] hover:text-[#27E7E2]">Play now →</Link>
-          </aside>
+          <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
+            <p className="border-2 border-[#FF3EA8] bg-[#04050A] px-3 py-1 text-[10px] font-black uppercase tracking-[.18em] text-[#FF3EA8] sm:text-xs">
+              Ape Vice Arcade presents
+            </p>
+            <GameorillaLogo className="mt-5 h-auto w-full max-w-[700px] [image-rendering:pixelated]" />
+            <h1 className="sr-only">Gameorilla: Ape Vice Arcade</h1>
+            <p className="mt-3 max-w-xl text-xs font-black uppercase leading-relaxed tracking-[.13em] text-[#27E7E2] sm:text-sm">
+              The neon after-hours party cabinet. Bring your crew. Stack bananas. Make the room laugh.
+            </p>
+
+            <nav aria-label="Arcade start menu" className="mt-7 w-full max-w-md border-4 border-[#F3F6FF] bg-[#04050A] p-2 text-left shadow-[6px_6px_0_#5130C9] sm:p-3">
+              <Link
+                href="/games/fill-in-the-blank"
+                className="group flex items-center gap-3 bg-[#FF3EA8] px-3 py-3 text-sm font-black uppercase tracking-[.1em] text-[#04050A] transition hover:bg-[#27E7E2] sm:text-base"
+              >
+                <span aria-hidden="true" className="animate-pulse text-lg leading-none">▶</span>
+                Start game <span className="ml-auto text-[10px] sm:text-xs">1–8 players</span>
+              </Link>
+              <Link href="/how-to-play" className="mt-1 flex items-center gap-3 px-3 py-3 text-xs font-black uppercase tracking-[.1em] text-[#F3F6FF] transition hover:bg-[#5130C9] hover:text-[#27E7E2] sm:text-sm">
+                <span aria-hidden="true">•</span> How to play
+              </Link>
+              <Link href="/support" className="mt-1 flex items-center gap-3 px-3 py-3 text-xs font-black uppercase tracking-[.1em] text-[#F3F6FF] transition hover:bg-[#5130C9] hover:text-[#27E7E2] sm:text-sm">
+                <span aria-hidden="true">•</span> Help desk
+              </Link>
+            </nav>
+
+            <Link href="/games/fill-in-the-blank" className="mt-7 text-sm font-black uppercase tracking-[.2em] text-[#F3F6FF] underline decoration-2 underline-offset-4 transition hover:text-[#27E7E2] motion-safe:animate-pulse">
+              Press start
+            </Link>
+            <p className="mt-3 text-[10px] font-black uppercase tracking-[.14em] text-[#F3F6FF]/65">
+              Tonight&apos;s cabinet: Fill in the Blank · Banana target: 5 / 10 / 15
+            </p>
+          </div>
+        </div>
+
+        <section className="grid gap-3 border-t-4 border-[#27E7E2] bg-[#04050A] p-4 text-center sm:grid-cols-3 sm:p-5">
+          <article className="border-2 border-[#27E7E2] bg-[#071b21] px-3 py-4">
+            <p className="text-[10px] font-black uppercase tracking-[.15em] text-[#27E7E2]">Insert crew</p>
+            <p className="mt-2 text-xs font-bold leading-relaxed text-[#F3F6FF]/80">Open a private room and pass the code around.</p>
+          </article>
+          <article className="border-2 border-[#FF3EA8] bg-[#221021] px-3 py-4">
+            <p className="text-[10px] font-black uppercase tracking-[.15em] text-[#FF3EA8]">Choose a stack</p>
+            <p className="mt-2 text-xs font-bold leading-relaxed text-[#F3F6FF]/80">Play first to 5, 10, or 15 bananas.</p>
+          </article>
+          <article className="border-2 border-[#8D46FF] bg-[#160f2b] px-3 py-4">
+            <p className="text-[10px] font-black uppercase tracking-[.15em] text-[#8D46FF]">Vote loud</p>
+            <p className="mt-2 text-xs font-bold leading-relaxed text-[#F3F6FF]/80">Finish the prompt. Pick the line that lands.</p>
+          </article>
         </section>
 
-        <section className="border-y-2 border-[#5130C9] py-12">
-          <p className="text-xs font-black uppercase tracking-[.16em] text-[#FF3EA8]">No tutorial boss fight</p>
-          <div className="mt-7 grid gap-5 md:grid-cols-3">
-            {steps.map(([number, title, copy]) => (
-              <article key={number} className="border-2 border-[#27E7E2] bg-[#04050A] p-5">
-                <p className="text-sm font-black text-[#FF3EA8]">{number}</p>
-                <h2 className="mt-5 text-xl font-black text-[#27E7E2]">{title}</h2>
-                <p className="mt-3 text-sm font-semibold leading-relaxed text-[#F3F6FF]/75">{copy}</p>
-              </article>
+        <footer className="flex flex-col gap-3 border-t-4 border-[#5130C9] bg-[#04050A] px-4 py-5 text-center text-[10px] font-black uppercase tracking-[.1em] text-[#F3F6FF]/70 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <p>Gameorilla · Ape Vice Arcade · Free test night</p>
+          <nav aria-label="Site information" className="flex flex-wrap justify-center gap-x-4 gap-y-2">
+            {footerLinks.map(([label, href]) => (
+              <Link key={href} href={href} className="hover:text-[#27E7E2]">{label}</Link>
             ))}
-          </div>
-        </section>
-
-        <footer className="flex flex-wrap justify-between gap-5 py-8 text-xs font-bold uppercase tracking-[.1em] text-[#F3F6FF]/60">
-          <p>Gameorilla · Ape Vice Arcade</p>
-          <div className="flex gap-4">
-            <Link href="/faq" className="hover:text-[#27E7E2]">FAQ</Link>
-            <Link href="/support" className="hover:text-[#27E7E2]">Support</Link>
-            <Link href="/privacy" className="hover:text-[#27E7E2]">Privacy</Link>
-            <Link href="/terms" className="hover:text-[#27E7E2]">Terms</Link>
-          </div>
+          </nav>
         </footer>
-      </div>
+      </section>
     </main>
   );
 }
