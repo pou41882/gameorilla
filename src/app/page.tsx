@@ -22,15 +22,15 @@ export default function HomePage() {
         <div className="relative isolate overflow-hidden border-b-4 border-[#27E7E2] bg-[#04050A]">
           <GameorillaLogo className="block h-auto w-full max-w-none [image-rendering:pixelated]" />
           <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#04050A]/90 to-transparent sm:h-32" />
-          <p className="absolute left-1/2 top-3 -translate-x-1/2 whitespace-nowrap border-2 border-[#FF3EA8] bg-[#04050A] px-3 py-1 text-center text-[9px] font-black uppercase tracking-[.18em] text-[#FF3EA8] sm:top-5 sm:text-xs">
-            PoundTown Games presents
-          </p>
 
           <div className="pointer-events-none absolute left-1/2 top-[5%] w-[47%] min-w-[164px] max-w-[500px] -translate-x-1/2">
             <MackMoon className="h-auto w-full drop-shadow-[0_0_16px_#27E7E2]" />
           </div>
 
           <div className="absolute inset-x-0 bottom-0 flex h-[38%] flex-col items-center justify-center border-t-4 border-[#27E7E2] bg-[#04050A] px-3 py-3 text-center sm:px-6 sm:py-5">
+            <p className="mb-2 text-[9px] font-black uppercase tracking-[.18em] text-[#FF3EA8] sm:text-xs">
+              PoundTown Games presents
+            </p>
             <GameorillaWordmark className="text-[clamp(2rem,8.9vw,5.7rem)]" />
             <h1 className="sr-only">PoundTown Games Presents Gameorilla: The Ape Vice Arcade</h1>
             <p className="mt-2 text-[10px] font-black uppercase tracking-[.24em] text-[#F3F6FF] sm:text-sm">
