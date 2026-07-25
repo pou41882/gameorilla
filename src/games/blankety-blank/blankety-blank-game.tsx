@@ -826,8 +826,8 @@ setView("lobby");
       return;
     }
 
-    if (players.length < 2) {
-      setMessage("You need at least one other player before starting.");
+    if (players.length < 3) {
+      setMessage("You need at least three players before starting.");
       return;
     }
 
@@ -1329,18 +1329,19 @@ setView("lobby");
                     <button
                       onClick={startRoundOne}
                       disabled={
-                        isStartingRound || realtimeStatus !== "connected"
+                        isStartingRound || realtimeStatus !== "connected" || players.length < 3
                       }
                       className="w-full rounded-2xl border-2 border-[#04050A] bg-[#04050A] px-7 py-4 text-lg font-black text-[#F3F6FF] transition hover:-translate-y-1 hover:bg-[#FF5E78] disabled:cursor-wait disabled:opacity-60"
                     >
-                      {isStartingRound
-                        ? "Starting round…"
-                        : "Start round one"}
+                      {players.length < 3
+                        ? `Waiting for ${3 - players.length} more`
+                        : isStartingRound
+                          ? "Starting round…"
+                          : "Start round one"}
                     </button>
 
                     <p className="mt-3 text-center text-sm font-semibold text-[#04050A]">
-                      Two players works for testing. Three or more is where the
-                      voting gets interesting.
+                      Three players is the minimum. Invite the crew before you start.
                     </p>
                   </>
                 ) : (
