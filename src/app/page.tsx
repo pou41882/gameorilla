@@ -2,6 +2,7 @@ import Link from "next/link";
 import { GameorillaLogo } from "@/components/gameorilla-brand";
 
 const footerLinks = [
+  ["PoundTown Games", "https://poundtown.games"],
   ["How to play", "/how-to-play"],
   ["FAQ", "/faq"],
   ["Support", "/support"],
